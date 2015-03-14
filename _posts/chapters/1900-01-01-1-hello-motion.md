@@ -45,7 +45,7 @@ If you're not intimately familiar with Ruby, the first thing you may think is, "
 
 So we `require 'motion/project'`, which gives us proper access to RubyMotion and setting up our app in the `.setup` block. There are all sorts of properties for `app`, which as the auto-generated comment says can be listed using `rake config`. By default, RubyMotion sets the `.name` to our project's name, so that looks good.
 
-Wait, why do we have a `Rakefile` at all? Well, RubyMotion uses `rake` for all of its functions, and the `rake` command runs the `Rakefile` in directory you run it in. The `Rakefile` is supposed to define the set of "tasks" which can be attached to rake (`rake <task>`), but these are actually created for us when we `require "motion/project"`.
+Wait, why do we have a `Rakefile` at all? Well, RubyMotion uses `rake` for all of its functions, and the `rake` command runs the `Rakefile` in the directory you run it in. The `Rakefile` is supposed to define the set of "tasks" which can be attached to rake (`rake <task>`), but these are actually created for us when we `require "motion/project"`.
 
 Give it a go! Run `rake` in your terminal and you should have a blank iPhone simulator pop up. Additionally, your terminal is now running an interactive console in which you can execute new code on the fly.
 
